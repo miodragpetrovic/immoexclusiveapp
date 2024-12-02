@@ -4,7 +4,11 @@
 
 
 body {
-  font-family: Jost, Arial, Helvetica, sans-serif;
-  font-weight: 400;
+  font-family: Jost, Arial, Helvetica, serif;
+  background-color: #121616;
+}
+
+p {
+  font-size: 16px !important;
 }
 

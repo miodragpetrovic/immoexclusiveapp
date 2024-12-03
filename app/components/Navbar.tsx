@@ -28,7 +28,7 @@ const Navbar = () => {
                 </li>
             </ul>
             <div className='flex items-center gap-4'>
-                <Link href='/'>
+                <Link href='/login'>
                     Login / Registrieren
                 </Link>
                 <Button />

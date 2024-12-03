@@ -7,12 +7,14 @@ const Navbar = () => {
   return (
     <header className='bg-[#121616] text-white py-4 shadow-lg'>
         <nav className='flex flex-wrap mx-auto max-w-6xl items-center justify-between px-4'>
-            <Image
-            src='/Logo.png'
-            width={70}
-            height={70}
-            alt='Logo Immoexclusive'
-            />
+            <Link href='/'>
+                <Image
+                src='/Logo.png'
+                width={270}
+                height={70}
+                alt='Logo Immoexclusive'
+                />
+            </Link>
             <ul className='flex gap-4'>
                 <li>
                     <Link href='/'>Home</Link>

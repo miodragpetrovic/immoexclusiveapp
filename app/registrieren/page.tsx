@@ -9,7 +9,7 @@ const Registrieren = () => {
             <Image
             className='p-2 mx-auto'
             src='/Logo.png'
-            width={150}
+            width={300}
             height={150}
             alt='immoexclusive logo'
             />

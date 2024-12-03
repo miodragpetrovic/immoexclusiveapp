@@ -2,14 +2,16 @@ import React from 'react'
 import Image from 'next/image'
 import { FaBed, FaBath } from 'react-icons/fa';
 import { BiArea } from 'react-icons/bi';
+import { IoGitCompareSharp } from "react-icons/io5";
+
 
 const Card = () => {
   return (
     <section>
-        <div className="max-w-4xl mx-auto p-4">
-      <div className="flex flex-col md:flex-row bg-white shadow-md rounded-lg overflow-hidden">
+        <div className="max-w-6xl mx-auto p-4">
+      <div className="flex flex-col h-72 md:flex-row bg-white shadow-md overflow-hidden">
         {/* Image Section */}
-        <div className="relative w-full h-48 md:w-1/3 md:h-auto">
+        <div className="relative w-full h-40 md:w-1/3 md:h-auto">
           <Image
             src="/wohnung.jpg" // Replace with your local image in the `public` folder
             alt="House"
@@ -20,33 +22,35 @@ const Card = () => {
         </div>
 
         {/* Details Section */}
-        <div className="flex flex-col p-4 md:w-2/3">
+        <div className="flex bg-[#444444] border-none h-72 justify-center flex-col p-8 md:w-2/3">
           {/* Title and Price */}
           <div className="flex justify-between items-center">
-            <h2 className="text-lg font-semibold text-gray-800">
+            <h2 className="text-4xl font-semibold text-white">
               Beautiful Family Home
             </h2>
-            <h3 className="text-lg font-bold text-indigo-600">$250,000</h3>
+            <IoGitCompareSharp size={23} />
           </div>
 
           {/* Description */}
-          <p className="text-sm text-gray-600 mt-2">
+          <p className="text-sm text-white mt-2">
             This charming 3-bedroom, 2-bathroom home features modern amenities
             and a spacious backyard perfect for entertaining.
           </p>
 
+          <h3 className="font-bold text-white text-xxl mt-5">250,000 CHF</h3>
+
           {/* Features */}
-          <div className="flex items-center space-x-6 mt-4 text-gray-700">
+          <div className="flex items-center space-x-6 mt-4 text-white">
             <div className="flex items-center">
-              <FaBed className="text-indigo-500 mr-1" />
+              <FaBed size={25} className="text-[#BAA383] mr-1" />
               <span>3 Zimmer</span>
             </div>
             <div className="flex items-center">
-              <FaBath className="text-indigo-500 mr-1" />
+              <FaBath size={25} className="text-[#BAA383] mr-1" />
               <span>2 Bad</span>
             </div>
             <div className="flex items-center">
-              <BiArea className="text-indigo-500 mr-1" />
+              <BiArea size={25} className="text-[#BAA383] mr-1" />
               <span>1800 Fläche</span>
             </div>
           </div>

@@ -13,19 +13,6 @@ export default {
         foreground: "var(--foreground)",
       },
     },
-    animation: {
-      'zoom-out': 'zoom-out 10s linear infinite',
-    },
-    keyframes: {
-      'zoom-out': {
-        '0%': {
-          transform: 'scale(1.1)',
-        },
-        '100%': {
-          transform: 'scale(1)',
-        },
-      },
-    },
   },
   plugins: [],
 } satisfies Config;

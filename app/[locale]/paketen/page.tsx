@@ -37,7 +37,7 @@ const Paketen = () => {
                 <h3>0.00 CHF</h3>
                 <p>Kostenlos</p>
                 <hr className='border-[#323232] my-5' />
-                <div className='py-4'>
+                    <div className='py-4'>
                         <ul className='package-list'>
                             <li className='flex items-center gap-2'><GoIssueClosed size={22} /> 1 Benutzer </li>
                             <li className='flex items-center gap-2'><GoIssueClosed size={22} /> 1 Inserat </li>

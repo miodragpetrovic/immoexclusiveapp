@@ -6,12 +6,12 @@
 body {
   font-family: Poppins, sans-serif !important;
   background-color: #181818;
-  font-weight: 200;
+  font-weight: 400;
 }
 
 h1 {
   font-size: 3rem !important;
-  font-weight: 700 !important;
+  font-weight: 600 !important;
 }
 
 h1.main-heading {

@@ -5,7 +5,7 @@
 
 body {
   font-family: Lato, serif !important;
-  background-color: #101010;
+  background-color: #181818;
 }
 
 h1 {
@@ -32,13 +32,19 @@ p {
 
 /* Navbar*/
 .logoimmo {
-  font-weight: 400;
+  font-weight: 700;
+  font-size: 14;
   letter-spacing: 2px;
+  font-family: Raleway, serif;
+  text-transform: uppercase;
 }
 
 .logoexclusive {
   font-weight: 300;
+  font-size: 14;
   letter-spacing: 2px;
+  font-family: Raleway, serif;
+  text-transform: uppercase;
 }
 
 /* Package styling */

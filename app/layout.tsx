@@ -4,10 +4,15 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { Lato } from 'next/font/google'
+import { Raleway } from "next/font/google";
 
 
 const lato = Lato({
   weight: ['100', '300', '400', '700', '900']
+})
+
+const raleway = Raleway({
+  weight: ['100', '200', '300', '400', '500', '600', '700', '900']
 })
 
 export const metadata: Metadata = {
@@ -23,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${lato}`}
+        className={`${lato}, ${raleway}`}
       >
         <Navbar />
         {children}

@@ -3,12 +3,12 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import { Lato } from 'next/font/google'
 
 
-const jost = localFont({
-  src: "./fonts/Jost.woff2",
-  weight: "100 900",
-});
+const lato = Lato({
+  weight: ['100', '300', '400', '700', '900']
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${jost}`}
+        className={`${lato}`}
       >
         <Navbar />
         {children}

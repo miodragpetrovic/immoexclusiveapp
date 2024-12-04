@@ -4,8 +4,13 @@
 
 
 body {
-  font-family: Jost, Arial, Helvetica, serif !important;
-  background-color: #171717;
+  font-family: Lato, serif !important;
+  background-color: #101010;
+}
+
+h1 {
+  font-size: 2.3rem !important;
+  font-weight: 100;
 }
 
 h1.main-heading {
@@ -18,10 +23,17 @@ h2 {
 
 h3 {
   font-size: 1.6rem;
+  font-weight: 600;
 }
 
 p {
   font-size: 18px !important;
+}
+
+/* Package styling */
+
+.package-list li {
+  padding: 4px;
 }
 
 

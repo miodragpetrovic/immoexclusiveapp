@@ -10,8 +10,8 @@ const Navbar = () => {
             <Link href='/'>
                 <Image
                 src='/Logo.png'
-                width={270}
-                height={70}
+                width={40}
+                height={50}
                 alt='Logo Immoexclusive'
                 />
             </Link>

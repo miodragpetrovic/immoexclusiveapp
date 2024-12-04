@@ -1,39 +1,82 @@
 import React from 'react'
 import Image from 'next/image'
+import { GoIssueClosed } from "react-icons/go";
+import { SlClose } from "react-icons/sl";
+
 
 const Paketen = () => {
+
+    const packageStandard: number = 0;
+    const packagePremium: number = 995;
+    const packageBusiness: number = 7000;
+
   return (
-    <div className="max-w-6xl px-4 py-3 my-28 text-white text-center mx-auto">
-        <div className='bg-[#232323] max-w-[30rem] rounded-md shadow-lg mx-auto pb-5 pt-8 border border-[#232323] border-t-[#BAA383] border-t-[3px]'>
+    <>
+    <div className='max-w-6xl px-4 mx-auto'>
+        <h1 className='text-2xl text-white'>Immobilien inserieren</h1>
+    </div>
+    <div className="md:flex max-w-6xl px-4 py-3 my-28 text-white justify-center gap-5 text-center mx-auto">
+
+        <div className='bg-[#232323] w-2xl shadow-md py-5 px-10 border border-[#232323] border-t-[#BAA383] border-b-[#BAA383]'>
             <Image
             className='p-2 mx-auto'
-            src='/Logo.png'
-            width={300}
+            src='/paketstarter.png'
+            width={130}
             height={150}
             alt='immoexclusive logo'
             />
-            <div className='py-8'>
-                <h2>Anmelden</h2>
-                <p className='text-gray-400'>Logge dich bei immoexclusive ein</p>
+            <div className='py-8 w-2xl'>
+                <h4 className='uppercase text-[#BAA383]'>Standard</h4>
+                <h3>0.00 CHF</h3>
+                <p>Jährlich</p>
+                <hr className='border-[#323232] my-5' />
+                <div className='py-4'>
+                        <ul className='package-list'>
+                            <li className='flex items-center gap-2'><GoIssueClosed size={22} /> 1 Benutzer </li>
+                            <li className='flex items-center gap-2'><GoIssueClosed size={22} /> Eine Immobilienanzeige </li>
+                            <li className='flex items-center gap-2'><GoIssueClosed size={22} /> Bis 10 Fotos hochladen </li>
+                            <li className='flex items-center gap-2'><SlClose size={21} color='#ff4d6d' /> Dokumenten hochladen </li>
+                            <li className='flex items-center gap-2'><GoIssueClosed size={22} /> Beinhaltet eine Immobilienanzeige </li>
+                            <li className='flex items-center gap-2'><GoIssueClosed size={22} /> Beinhaltet eine Immobilienanzeige </li>
+                            <li className='flex items-center gap-2'><GoIssueClosed size={22} />inkl. MwSt.</li>
+                        </ul>
+                    </div>
+                    <hr className='border-[#323232] my-5' />
+                <button className='bg-[#BAA383] w-full rounded-full py-3 mt-5 shadow-md'>Kostenlos nutzen</button>
             </div>
-            
-                <div className='max-w-[25rem] mx-auto p-3'>
-                    <input type="text" className='w-full bg-[#282828] py-3 px-4 text-base' placeholder='Benutzername oder E-Mail' />
-    
-                    <input type="password" className='w-full bg-[#282828] py-3 px-4 mt-2 text-base' placeholder='Passwort' />
-
-                    <span className='flex py-3 justify-between mt-3'>
-                        <div className='flex gap-2'>
-                            <input type="checkbox" /><p>Angemeldet bleiben</p>
-                        </div>
-                        <p>Passwort vergessen?</p>
-                    </span>
-                    <button className='bg-[#BAA383] w-full rounded-full py-3 mt-5 shadow-md'>Einloggen</button>
-                    <p className='my-5'>Noch kein Konto erstellt?</p>
-                </div>
-            
         </div>
+
+        <div className='bg-[#232323] w-2xl shadow-md py-5 px-10 border border-[#232323] border-t-[#BAA383] border-b-[#BAA383]'>
+            <Image
+            className='p-2 mx-auto'
+            src='/paketstarter.png'
+            width={130}
+            height={150}
+            alt='immoexclusive logo'
+            />
+            <div className='py-8 w-2xl'>
+                <h4 className='uppercase text-[#BAA383]'>Premium</h4>
+                <h3>995.- CHF</h3>
+                <p className='text-sm'>Jährlich</p>
+                <hr className='border-[#323232] my-5' />
+                    <div className='py-4'>
+                        <ul className='package-list'>
+                            <li className='flex items-center gap-2'><GoIssueClosed size={22} /> 1 Benutzer </li>
+                            <li className='flex items-center gap-2'><GoIssueClosed size={22} /> Beinhaltet 15 Immobilienanzeige </li>
+                            <li className='flex items-center gap-2'><GoIssueClosed size={22} /> Bis 30 Fotos hochladen </li>
+                            <li className='flex items-center gap-2'><GoIssueClosed size={22} /> Dokumenten hochladen </li>
+                            <li className='flex items-center gap-2'><GoIssueClosed size={22} /> Beinhaltet eine Immobilienanzeige </li>
+                            <li className='flex items-center gap-2'><GoIssueClosed size={22} /> Beinhaltet eine Immobilienanzeige </li>
+                            <li className='flex items-center gap-2'><GoIssueClosed size={22} />inkl. MwSt.</li>
+                        </ul>
+                    </div>
+                    <hr className='border-[#323232] my-5' />
+                <button className='bg-[#BAA383] w-full rounded-full py-3 mt-5 shadow-md'>Kaufen</button>
+            </div>
+        </div>
+
     </div>
+    </>
   )
 }
 

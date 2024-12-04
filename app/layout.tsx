@@ -3,12 +3,12 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import { Lato } from 'next/font/google'
+import { Poppins } from 'next/font/google'
 import { Raleway } from "next/font/google";
 
 
-const lato = Lato({
-  weight: ['100', '300', '400', '700', '900']
+const poppins = Poppins({
+  weight: ['100', '200', '300', '400', '500', '600', '700', '900']
 })
 
 const raleway = Raleway({
@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${lato}, ${raleway}`}
+        className={`${poppins}, ${raleway}`}
       >
         <Navbar />
         {children}

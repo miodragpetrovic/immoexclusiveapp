@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import { GoIssueClosed } from "react-icons/go";
 import { SlClose } from "react-icons/sl";
+import Link from 'next/link';
 
 
 const Paketen = () => {
@@ -12,10 +13,16 @@ const Paketen = () => {
 
   return (
     <>
-    <div className='max-w-6xl px-4 mx-auto'>
+    <div className='max-w-6xl my-5 px-4 mx-auto'>
         <h1 className='text-2xl text-white'></h1>
+        <p className='text-white'>Das Paket Premium bietet eine attraktive Lösung für Nutzer oder Unternehmen, die umfangreiche 
+            Immobilienanzeigen erstellen möchten. Mit diesem Paket können folgende Vorteile genutzt werden:
+        </p>
+        <ul>
+            <li className='text-white'>15 Immobilienanzeigen: Jede Benutzerin bzw. jeder Benutzer oder Mitarbeiter hat die Möglichkeit, bis zu 15 verschiedene Immobilienanzeigen zu erstellen.</li>
+        </ul>
     </div>
-    <div className="md:flex max-w-6xl px-4 py-3 my-28 text-white justify-center gap-5 text-center mx-auto">
+    <div className="md:flex max-w-6xl px-4 py-3 mb-28 mt-10 text-white justify-center gap-5 text-center mx-auto">
 
         <div className='bg-[#232323] w-2xl shadow-md py-5 px-10 border border-[#232323] border-t-[#BAA383] border-b-[#BAA383]'>
             <Image
@@ -33,7 +40,7 @@ const Paketen = () => {
                 <div className='py-4'>
                         <ul className='package-list'>
                             <li className='flex items-center gap-2'><GoIssueClosed size={22} /> 1 Benutzer </li>
-                            <li className='flex items-center gap-2'><GoIssueClosed size={22} /> Eine Immobilienanzeige </li>
+                            <li className='flex items-center gap-2'><GoIssueClosed size={22} /> 1 Inserat </li>
                             <li className='flex items-center gap-2'><GoIssueClosed size={22} /> Bis 10 Fotos hochladen </li>
                             <li className='flex items-center gap-2'><SlClose size={21} color='#ff4d6d' /> Dokumenten hochladen </li>
                             <li className='flex items-center gap-2'><SlClose size={21} color='#ff4d6d' /> Eintrag im Anbieterverzeichnis </li>
@@ -41,6 +48,7 @@ const Paketen = () => {
                             <li className='flex items-center gap-2 invisible'><GoIssueClosed size={22} />inkl. MwSt.</li>
                         </ul>
                     </div>
+                    <Link className='pt-5 text-sm' href='/'>Preisliste ansehen</Link>
                     <hr className='border-[#323232] my-5' />
                 <button className='bg-[#BAA383] w-full rounded-full py-3 mt-5 shadow-md'>Kostenlos nutzen</button>
             </div>
@@ -62,14 +70,15 @@ const Paketen = () => {
                     <div className='py-4'>
                         <ul className='package-list'>
                             <li className='flex items-center gap-2'><GoIssueClosed size={22} /> 1 Benutzer </li>
-                            <li className='flex items-center gap-2'><GoIssueClosed size={22} /> Beinhaltet 15 Immobilienanzeige </li>
-                            <li className='flex items-center gap-2'><GoIssueClosed size={22} /> Bis 30 Fotos hochladen </li>
+                            <li className='flex items-center gap-2'><GoIssueClosed size={22} /> Beinhaltet 10 Inseraten </li>
+                            <li className='flex items-center gap-2'><GoIssueClosed size={22} /> Pro Inserat 30 Fotos </li>
                             <li className='flex items-center gap-2'><GoIssueClosed size={22} /> Dokumenten hochladen </li>
                             <li className='flex items-center gap-2'><GoIssueClosed size={22} /> Eintrag im Anbieterverzeichnis </li>
                             <li className='flex items-center gap-2'><GoIssueClosed size={22} /> Keine automatische Verlängerung </li>
                             <li className='flex items-center gap-2'><GoIssueClosed size={22} />inkl. MwSt.</li>
                         </ul>
                     </div>
+                    <Link className='pt-5 text-sm' href='/'>Preisliste ansehen</Link>
                     <hr className='border-[#323232] my-5' />
                 <button className='bg-[#BAA383] w-full rounded-full py-3 mt-5 shadow-md'>Kaufen</button>
             </div>
@@ -91,14 +100,15 @@ const Paketen = () => {
                     <div className='py-4'>
                         <ul className='package-list'>
                             <li className='flex items-center gap-2'><GoIssueClosed size={22} /> 10 Benutzer </li>
-                            <li className='flex items-center gap-2'><GoIssueClosed size={22} /> Beinhaltet 15 Immobilienanzeige </li>
-                            <li className='flex items-center gap-2'><GoIssueClosed size={22} /> Bis 30 Fotos hochladen </li>
+                            <li className='flex items-center gap-2'><GoIssueClosed size={22} /> Pro Benutzer 10 Inseraten </li>
+                            <li className='flex items-center gap-2'><GoIssueClosed size={22} /> Pro Inserat 30 Fotos </li>
                             <li className='flex items-center gap-2'><GoIssueClosed size={22} /> Dokumenten hochladen </li>
                             <li className='flex items-center gap-2'><GoIssueClosed size={22} /> Eintrag im Anbieterverzeichnis </li>
                             <li className='flex items-center gap-2'><GoIssueClosed size={22} /> Keine automatische Verlängerung </li>
                             <li className='flex items-center gap-2'><GoIssueClosed size={22} />inkl. MwSt.</li>
                         </ul>
                     </div>
+                    <Link className='pt-5 text-sm' href='/'>Preisliste ansehen</Link>
                     <hr className='border-[#323232] my-5' />
                 <button className='bg-[#BAA383] w-full rounded-full py-3 mt-5 shadow-md'>Kaufen</button>
             </div>

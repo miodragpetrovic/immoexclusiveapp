@@ -15,20 +15,9 @@ const Navbar = () => {
                 alt='Logo Immoexclusive'
                 />
             </Link>
-            <ul className='flex gap-4'>
-                <li>
-                    <Link href='/'>Home</Link>
-                </li>
-                <li>
-                    <Link href='/'>Kaufen</Link>
-                </li>
-                <li>
-                    <Link href='/'>Mieten</Link>
-                </li>
-                <li>
-                    <Link href='/'>Kontakt</Link>
-                </li>
-            </ul>
+            <p>
+                <span className='logoimmo'>immo</span><span className='logoexclusive'>exclusive.ch</span>
+            </p>
             <div className='flex items-center gap-4'>
                 <Link href='/login'>
                     Login / Registrieren

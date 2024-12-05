@@ -10,7 +10,7 @@ const Paketen = () => {
 
   return (
     <>
-    <div className='max-w-6xl my-5 px-4 mx-auto'>
+    <div className='container max-w-6xl my-5 px-14'>
         <h1 className='text-2xl text-white'></h1>
         <p className='text-white'>Das Paket Premium bietet eine attraktive Lösung für Nutzer oder Unternehmen, die umfangreiche 
             Immobilienanzeigen erstellen möchten. Mit diesem Paket können folgende Vorteile genutzt werden:
@@ -19,9 +19,9 @@ const Paketen = () => {
             <li className='text-white'>15 Immobilienanzeigen: Jede Benutzerin bzw. jeder Benutzer oder Mitarbeiter hat die Möglichkeit, bis zu 15 verschiedene Immobilienanzeigen zu erstellen.</li>
         </ul>
     </div>
-    <div className="md:flex max-w-6xl px-4 py-3 mb-28 mt-10 text-white justify-center gap-5 text-center mx-auto">
+    <div className="container lg:flex grid px-4 py-3 mb-28 mt-10 text-white gap-5 text-center mx-auto">
 
-        <div className='bg-[#232323] w-full shadow-md py-5 px-10 border border-[#232323] border-t-[#BAA383] border-b-[#BAA383]'>
+        <div className='bg-[#232323] w-full shadow-md py-5 px-5 border border-[#232323] border-t-[#BAA383] border-b-[#BAA383]'>
             <Image
             className='p-2 mx-auto'
             src='/paketstarter.png'
@@ -35,7 +35,7 @@ const Paketen = () => {
                 <p>Kostenlos</p>
                 <hr className='border-[#323232] my-5' />
                     <div className='py-4'>
-                        <ul className='package-list'>
+                        <ul className='package-list text-left'>
                             <li className='flex items-center gap-2'><GoIssueClosed size={22} /> 1 Benutzer </li>
                             <li className='flex items-center gap-2'><GoIssueClosed size={22} /> 1 Inserat </li>
                             <li className='flex items-center gap-2'><GoIssueClosed size={22} /> Bis 10 Fotos hochladen </li>
@@ -51,7 +51,7 @@ const Paketen = () => {
             </div>
         </div>
 
-        <div className='bg-[#232323] w-full shadow-md py-5 px-10 border border-[#232323] border-t-[#BAA383] border-b-[#BAA383]'>
+        <div className='bg-[#232323] w-full shadow-md py-5 px-5 border border-[#232323] border-t-[#BAA383] border-b-[#BAA383]'>
             <Image
             className='p-2 mx-auto'
             src='/paketstarter.png'
@@ -65,7 +65,7 @@ const Paketen = () => {
                 <p className='text-sm'>Jahresabo</p>
                 <hr className='border-[#323232] my-5' />
                     <div className='py-4'>
-                        <ul className='package-list'>
+                        <ul className='package-list text-left'>
                             <li className='flex items-center gap-2'><GoIssueClosed size={22} /> 1 Benutzer </li>
                             <li className='flex items-center gap-2'><GoIssueClosed size={22} /> Beinhaltet 10 Inseraten </li>
                             <li className='flex items-center gap-2'><GoIssueClosed size={22} /> Pro Inserat 30 Fotos </li>
@@ -81,7 +81,7 @@ const Paketen = () => {
             </div>
         </div>
 
-        <div className='bg-[#232323] w-full shadow-md py-5 px-10 border border-[#232323] border-t-[#BAA383] border-b-[#BAA383]'>
+        <div className='bg-[#232323] w-full shadow-md py-5 px-5 border border-[#232323] border-t-[#BAA383] border-b-[#BAA383]'>
             <Image
             className='p-2 mx-auto'
             src='/paketstarter.png'
@@ -95,7 +95,7 @@ const Paketen = () => {
                 <p className='text-sm'>Jahresabo</p>
                 <hr className='border-[#323232] my-5' />
                     <div className='py-4'>
-                        <ul className='package-list'>
+                        <ul className='package-list text-left'>
                             <li className='flex items-center gap-2 text-md'><GoIssueClosed size={22} /> 10 Benutzer </li>
                             <li className='flex items-center gap-2'><GoIssueClosed size={22} /> Pro Benutzer 10 Inseraten </li>
                             <li className='flex items-center gap-2'><GoIssueClosed size={22} /> Pro Inserat 30 Fotos </li>

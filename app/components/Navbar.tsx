@@ -7,7 +7,7 @@ import { HiOutlineMenuAlt1 } from "react-icons/hi";
 const Navbar = () => {
   return (
     <header className='bg-none z-10 text-white py-5 shadow-lg'>
-        <nav className='flex flex-wrap mx-auto max-w-7xl items-center justify-between px-4'>
+        <nav className='flex flex-wrap mx-auto container items-center justify-between px-4'>
             <div className='flex items-center gap-5'>
                 <button>
                     <HiOutlineMenuAlt1 size={29} />

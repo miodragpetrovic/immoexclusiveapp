@@ -32,7 +32,6 @@ const SearchBox = () => {
             </div>
         </div>
       </div>
-
     </div>
   );
 };

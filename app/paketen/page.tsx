@@ -7,9 +7,6 @@ import Link from 'next/link';
 
 const Paketen = () => {
 
-    const packageStandard: number = 0;
-    const packagePremium: number = 995;
-    const packageBusiness: number = 7000;
 
   return (
     <>
@@ -24,7 +21,7 @@ const Paketen = () => {
     </div>
     <div className="md:flex max-w-6xl px-4 py-3 mb-28 mt-10 text-white justify-center gap-5 text-center mx-auto">
 
-        <div className='bg-[#232323] w-2xl shadow-md py-5 px-10 border border-[#232323] border-t-[#BAA383] border-b-[#BAA383]'>
+        <div className='bg-[#232323] w-full shadow-md py-5 px-10 border border-[#232323] border-t-[#BAA383] border-b-[#BAA383]'>
             <Image
             className='p-2 mx-auto'
             src='/paketstarter.png'
@@ -54,7 +51,7 @@ const Paketen = () => {
             </div>
         </div>
 
-        <div className='bg-[#232323] w-2xl shadow-md py-5 px-10 border border-[#232323] border-t-[#BAA383] border-b-[#BAA383]'>
+        <div className='bg-[#232323] w-full shadow-md py-5 px-10 border border-[#232323] border-t-[#BAA383] border-b-[#BAA383]'>
             <Image
             className='p-2 mx-auto'
             src='/paketstarter.png'
@@ -75,7 +72,7 @@ const Paketen = () => {
                             <li className='flex items-center gap-2'><GoIssueClosed size={22} /> Dokumenten hochladen </li>
                             <li className='flex items-center gap-2'><GoIssueClosed size={22} /> Eintrag im Anbieterverzeichnis </li>
                             <li className='flex items-center gap-2'><GoIssueClosed size={22} /> Keine automatische Verlängerung </li>
-                            <li className='flex items-center gap-2'><GoIssueClosed size={22} />inkl. MwSt.</li>
+                            <li className='flex items-center gap-2'><GoIssueClosed size={22} /> inkl. MwSt. </li>
                         </ul>
                     </div>
                     <Link className='pt-5 text-sm' href='/'>Preisliste ansehen</Link>
@@ -84,7 +81,7 @@ const Paketen = () => {
             </div>
         </div>
 
-        <div className='bg-[#232323] w-2xl shadow-md py-5 px-10 border border-[#232323] border-t-[#BAA383] border-b-[#BAA383]'>
+        <div className='bg-[#232323] w-full shadow-md py-5 px-10 border border-[#232323] border-t-[#BAA383] border-b-[#BAA383]'>
             <Image
             className='p-2 mx-auto'
             src='/paketstarter.png'
@@ -99,7 +96,7 @@ const Paketen = () => {
                 <hr className='border-[#323232] my-5' />
                     <div className='py-4'>
                         <ul className='package-list'>
-                            <li className='flex items-center gap-2'><GoIssueClosed size={22} /> 10 Benutzer </li>
+                            <li className='flex items-center gap-2 text-md'><GoIssueClosed size={22} /> 10 Benutzer </li>
                             <li className='flex items-center gap-2'><GoIssueClosed size={22} /> Pro Benutzer 10 Inseraten </li>
                             <li className='flex items-center gap-2'><GoIssueClosed size={22} /> Pro Inserat 30 Fotos </li>
                             <li className='flex items-center gap-2'><GoIssueClosed size={22} /> Dokumenten hochladen </li>

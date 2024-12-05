@@ -3,13 +3,9 @@
 import { useState } from 'react';
 import { TbZoom } from "react-icons/tb";
 import { HiOutlineAdjustments } from "react-icons/hi";
-import { useTranslations } from 'next-intl';
-
 
 
 const SearchBox = () => {
-
-  const t = useTranslations('HomePage');
 
   return (
     <div className="rounded-lg shadow-2xl">
@@ -17,10 +13,10 @@ const SearchBox = () => {
       {/* Tabs */}
       <div className='flex text-gray-500'>
         <button className='bg-[#212121] font-medium text-sm py-4 px-6 border-r-2 border-r-[#292929] rounded-tl-xl'>
-            {t('tabrent')}
+            Mieten
         </button>
         <button className='bg-[#212121] font-medium text-sm py-4 px-6 rounded-tr-xl'>
-            {t('tabbuy')}
+            Kaufen
         </button>
       </div>
       <div className='bg-[#212121] rounded-tr-xl rounded-br-xl rounded-bl-xl'>
@@ -32,7 +28,7 @@ const SearchBox = () => {
                 </div>
             <div className='flex gap-2'>
                 <button className='bg-[#BAA383] rounded-full p-5'><HiOutlineAdjustments size={27} /></button>
-                <button className='bg-[#BAA383] rounded-full p-5 shadow-md'><TbZoom size={27} /></button>
+                <button className='bg-[#BAA383] rounded-full p-5'><TbZoom size={27} /></button>
             </div>
         </div>
       </div>

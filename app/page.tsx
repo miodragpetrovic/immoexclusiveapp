@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Card from "././components/Card";
-import SearchBox from "././components/SeachBox";
+import SearchBox from "./components/SeachBox";
 
 export default function Home() {
   return (
